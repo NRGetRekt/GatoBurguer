@@ -1,0 +1,23 @@
+{
+  "name": "gatoburguer",
+  "version": "1.0.0",
+  "description": "YouTube Music bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NRGetRekt/GatoBurguer.git"
+  },
+  "author": "NRGetRekt",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/NRGetRekt/GatoBurguer/issues"
+  },
+  "homepage": "https://github.com/NRGetRekt/GatoBurguer#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "ytdl-core": "^4.11.2"
+  }
+}
