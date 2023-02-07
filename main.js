@@ -1,6 +1,12 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+const { Client, GatewayIntentBits } = require('discord.js');
 const ytdl = require('ytdl-core');
+const client = new Client({
+        intents: [
+                GatewayIntentBits.Guilds,
+                GatewayIntentBits.GuildMessages,
+                GatewayIntentBits.MessageContent,
+        ],
+});
 
 client.on('ready', () => {
     console.log('Ready!');
