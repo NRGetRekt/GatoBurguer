@@ -12,7 +12,7 @@ client.on('ready', () => {
     console.log('Ready!');
 });
 
-client.on('message', message => {
+client.on('messageCreate', message => {
     if (message.content.startsWith('!play')) {
         const voiceChannel = message.member.voiceChannel;
         if (!voiceChannel) {
