@@ -20,4 +20,4 @@ client.on('message', message => {
     }
 });
 
-client.login('YOUR_TOKEN_HERE');
+client.login('YOUR_TOKEN');
