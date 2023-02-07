@@ -10,7 +10,7 @@ client.on('message', message => {
     if (message.content.startsWith('!play')) {
         const voiceChannel = message.member.voiceChannel;
         if (!voiceChannel) {
-            return message.reply('Please be in a voice channel first!');
+            return message.reply('Please join a voice channel first!');
         }
         voiceChannel.join().then(connection => {
             const stream = ytdl(message.content.split(' ')[1], { filter : 'audioonly' });
